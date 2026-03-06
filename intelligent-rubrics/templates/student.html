@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RubriQ - Student</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Student Dashboard</h1>
+      <p>Upload and get instant rubric feedback.</p>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/teacher">Teacher</a>
+        <a class="active" href="/student">Student</a>
+        <a href="/records">Records</a>
+        <a href="/analysis">Analysis</a>
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark</button>
+      </nav>
+    </section>
+
+    <section class="card">
+      <div class="tabs" id="typeTabs">
+        <button class="active" data-type="algorithm">Algorithm</button>
+        <button data-type="flowchart">Flowchart</button>
+        <button data-type="pseudocode">Pseudocode</button>
+      </div>
+      <p class="small">Type: <span id="activeType">algorithm</span></p>
+    </section>
+
+    <section class="card">
+      <form id="evalForm">
+        <label for="studentName">Student Name</label>
+        <input id="studentName" required />
+
+        <label for="rubricSelect">Rubric</label>
+        <select id="rubricSelect" required></select>
+
+        <label for="answerFile">Answer File</label>
+        <input id="answerFile" type="file" required />
+
+        <button type="submit">Evaluate</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Result</h2>
+      <div id="resultPanel" class="note">No evaluation yet.</div>
+      <details>
+        <summary>Raw JSON</summary>
+        <pre id="rawJson">No result</pre>
+      </details>
+    </section>
+  </main>
+  <script src="/static/theme.js"></script>
+  <script src="/static/student.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "algo-binary-search-v1",
+    "title": "Binary Search Algorithm Evaluation",
+    "question": "Write algorithm for Binary Search",
+    "answer_type": "algorithm",
+    "criteria": [
+      {
+        "id": "logic",
+        "name": "Logic",
+        "description": "Core algorithm logic",
+        "max_score": 5.0,
+        "keywords": [
+          "mid",
+          "low",
+          "high",
+          "while"
+        ]
+      },
+      {
+        "id": "complexity",
+        "name": "Complexity",
+        "description": "Time complexity explained",
+        "max_score": 3.0,
+        "keywords": [
+          "O(log n)",
+          "sorted"
+        ]
+      },
+      {
+        "id": "clarity",
+        "name": "Clarity",
+        "description": "Clean structure",
+        "max_score": 2.0,
+        "keywords": [
+          "if",
+          "return"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flow-binary-search-v1",
+    "title": "Binary Search Flowchart Evaluation",
+    "question": "Submit flowchart for Binary Search",
+    "answer_type": "flowchart",
+    "criteria": [
+      {
+        "id": "symbols",
+        "name": "Flow Symbols",
+        "description": "Uses correct symbols",
+        "max_score": 4.0,
+        "keywords": [
+          "start",
+          "decision",
+          "process",
+          "end"
+        ]
+      },
+      {
+        "id": "logic",
+        "name": "Flow Logic",
+        "description": "Decision flow is correct",
+        "max_score": 4.0,
+        "keywords": [
+          "mid",
+          "low",
+          "high",
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "neatness",
+        "name": "Readability",
+        "description": "Readable and neat",
+        "max_score": 2.0,
+        "keywords": [
+          "arrow",
+          "label"
+        ]
+      }
+    ]
+  }
+]

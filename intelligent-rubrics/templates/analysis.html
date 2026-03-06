@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RubriQ - Analysis</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Analysis Dashboard</h1>
+      <p>Performance trends and weak criteria.</p>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/teacher">Teacher</a>
+        <a href="/student">Student</a>
+        <a href="/records">Records</a>
+        <a class="active" href="/analysis">Analysis</a>
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark</button>
+      </nav>
+    </section>
+
+    <section class="card">
+      <div id="stats" class="stat-grid"></div>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>By Type</h2>
+        <div id="typeChart"></div>
+      </section>
+      <section class="card">
+        <h2>Weak Criteria</h2>
+        <div id="weakChart"></div>
+      </section>
+    </section>
+  </main>
+  <script src="/static/theme.js"></script>
+  <script src="/static/analysis.js"></script>
+</body>
+</html>

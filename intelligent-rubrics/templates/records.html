@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RubriQ - Records</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Student Records</h1>
+      <p>Submission history and score log.</p>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/teacher">Teacher</a>
+        <a href="/student">Student</a>
+        <a class="active" href="/records">Records</a>
+        <a href="/analysis">Analysis</a>
+        <button type="button" class="theme-toggle" data-theme-toggle>Dark</button>
+      </nav>
+    </section>
+
+    <section class="card">
+      <div class="grid">
+        <div>
+          <label for="typeFilter">Type</label>
+          <select id="typeFilter">
+            <option value="">All</option>
+            <option value="algorithm">Algorithm</option>
+            <option value="flowchart">Flowchart</option>
+            <option value="pseudocode">Pseudocode</option>
+          </select>
+        </div>
+        <div>
+          <label for="studentFilter">Student Name</label>
+          <input id="studentFilter" placeholder="Search" />
+        </div>
+      </div>
+      <button id="loadBtn" class="secondary">Load Records</button>
+    </section>
+
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Student</th>
+            <th>Rubric</th>
+            <th>Type</th>
+            <th>Score</th>
+            <th>%</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="recordsBody"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="/static/theme.js"></script>
+  <script src="/static/records.js"></script>
+</body>
+</html>
